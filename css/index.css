@@ -1,0 +1,57 @@
+html{
+    background-color: #dddddd;
+    height: 100%;
+}
+body{
+    background-color: #dddddd;
+}
+
+h4 {
+    margin-top: 25px;
+}
+.row {
+    margin-bottom: 20px;
+}
+.row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.container-fluid{
+    height:100%;
+    overflow-y: hidden;
+}
+
+[class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.col img{
+    display: block;
+    margin: auto;
+    width:90%;
+}
+
+.col p{
+    display: block;
+    margin: auto;
+    text-align:center
+}
+
+.grid_item {
+    background-color: #eeeeee;
+    /* background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0.2) 0%, rgba(125, 185, 232, 0) 100%); */
+    background-repeat: repeat;
+    border-radius:10px;
+    padding: 5px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
