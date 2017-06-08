@@ -1,3 +1,5 @@
-# fes web app
+# fes web page
+
+Open index.html
 
 
