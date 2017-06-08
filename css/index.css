@@ -28,6 +28,10 @@ body{
     width:97.5%
 }
 
+.modal-lg {
+    max-width: 80% !important;
+    max-height: 80% !important;
+}
 
 .grid_item {
     background-color: #eeeeee;
@@ -37,6 +41,7 @@ body{
     /* padding: 10px; */
     height: 100%;
     width: 100%;
+    max-width: 20vw;
 }
 
 .logo {
@@ -85,4 +90,32 @@ figure figcaption {
 
 .btn-secondary:hover{
     background:#aaaabb;
+}
+
+.right-line {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: #000;
+    margin: 30px 0;
+}
+.right-line:after {
+    position: absolute;
+    top: 55%;
+    overflow: hidden;
+    width: 100%;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    border-left: solid 20px #fff;
+}
+
+.modal-body .row h4{
+    /* color: blue; */
+    margin-top: 20px;
+    /* text-decoration: underline; */
+}
+
+.wp-post-image{
+    width:100%;
 }

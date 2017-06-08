@@ -14,21 +14,22 @@
         <!-- JAVASCRIPT -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/section.js"></script>
     </head>
 
-    <body>
+    <body onload="loadPage()">
         <nav class="navbar navbar-inverse fixed-bottom">
             <div class="container-fluid">
                 <div class="btn-group btn-group-lg mr-2" role="group">
-                    <button type="button" class="btn btn-secondary height-limit">
+                    <button type="button" class="btn btn-secondary height-limit" id="home">
                         <img src="img/home.png" class="height">
                     </button>
                 </div>
 
                 <div class="btn-group btn-group-lg mr-2 height-limit" role="group">
-                    <button type="button" class="btn btn-secondary"> Section 1 </button>
-                    <button type="button" class="btn btn-secondary"> Section 2 </button>
-                    <button type="button" class="btn btn-secondary"> Section 3 </button>
+                    <button type="button" class="btn btn-secondary" id="section1"> Private Equity </button>
+                    <button type="button" class="btn btn-secondary" id="section2"> Limited Partner </button>
+                    <button type="button" class="btn btn-secondary" id="section3"> MIC </button>
                 </div>
 
                 <div class="btn-group btn-group-lg mr-2" role="group">
@@ -43,10 +44,12 @@
             <div class="logo">
                 <img src="img/logo.png" alt="Logo" class="height">
             </div>
+        </div>
 
+        <div class="container-fluid width-limit" id="grid">
             <div class="row top-buffer">
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item" data-toggle="modal" data-target="#exampleModal">
+                <div class="col private_equity">
+                    <button type="button" class="btn btn-secondary grid_item" data-toggle="modal" data-target="#modal1">
                         <figure>
                             <img src="img/accilent_capital.jpg" alt="Accilent Capital Inc.">
                             <figcaption> Accilent Captial Inc. </figcaption>
@@ -55,232 +58,440 @@
                 </div>
 
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Accilent Capital Inc.</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                        </div>
+                <div class="col private_equity">
+                    <button type="button" class="btn btn-secondary grid_item " data-toggle="modal" data-target="#modal2">
+                        <figure>
+                            <img src="img/prestige_capital.jpg" alt="Nothing">
+                            <figcaption> Prestige Capital Inc. </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col limited_partner">
+                    <button type="button" class="btn btn-secondary grid_item " data-toggle="modal" data-target="#modal3">
+                        <figure>
+                            <img src="img/triple_flip.jpg" alt="Nothing">
+                            <figcaption> Triple Flip Inc. </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col mic">
+                    <button type="button" class="btn btn-secondary grid_item " data-toggle="modal" data-target="#modal4">
+                        <figure>
+                            <img src="img/mercury_mortgages.jpg" alt="Nothing">
+                            <figcaption> Mercury Mortages </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row top-buffer">
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row top-buffer">
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row top-buffer">
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </br> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-secondary grid_item">
+                        <figure>
+                            <img src="img/blank.png" alt="Nothing">
+
+                            <figcaption> Blank </figcaption>
+                        </figure>
+                    </button>
+                </div>
+
+                <div class="col">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Accilent Capital Inc.</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+							          <div class="container">
+                            <img src="img/accilent_capital_logo.png" alt="Unknown" width="150" height="100" class="alignnone size-full wp-image-3286">
+
+								            <div class="container">
+									              <!--social-->
+									              <div class="col-md-12"></div>
+									              <!--social-->
+									              <h2 class="right-line">产品介绍</h2>
+									              <div class="row">
+										                <div class="col-md-6 col-sm-6 col-xs-12">
+
+											                  <h3>能源基金 (CapSure油气对冲基金)</h3>
+											                  CapSure为合格投资者提供了可在能源市场投资对冲基金的机会。CapSure Hedged Oil and Gas Income and Growth Trust 让投资者利用近期能源价格的下调来获取利润。
+
+											                  <h4>基金总结</h4>
+											                  CapSure 基金提供给客户可以投资石油和天然气的机会，抛售之后不用再担心价格降低。 Accilent Capital公司通过与银行交易几十亿美元的经验来管理投资风险，帮助客户增强信心。CapSure 基金提供给客户6%的优先回报率。
+
+											                  <h4>管理</h4>
+											                  Accilent Capital公司的投资经理由普通合伙人组成，包括在安省证监会注册的投资组合经理（PM）、豁免基金经理（EMD）、投资基金经理（IFM）和大宗商品交易经理（CTM)。投资经理主要关注于管理合伙人的投资组合和公司日常运作。Accilent Capital公司成立于2002年，与合作伙伴共同管理约2000万美元资产，包括投资收藏级葡萄酒、全球证券和微型企业的股权私募。
+
+											                  <h4>投资指南</h4>
+
+											                  <ul class="list-unstyled">
+												                    <ul>a) 仅在加拿大销售</ul>
+												                    <ul>b) 公司网站不做报价，需要与基金经理联系投资事宜</ul>
+												                    <ul>c) 投资金额包含佣金、后续佣金、管理费和其他花费。</ul>
+												                    <ul>d) 本网站不提供投资、金融、法律、会计、税务方面的个人建议。网站内容不代替 专业顾问建议。</ul>
+												                    <ul>e) 所有的投资产品都会有一定的风险。</ul>
+											                  </ul>
+
+										                </div>
+										                <div class="col-md-6 col-sm-6 col-xs-12">
+											                  <div class="panel panel-primary animated fadeInDown animation-delay-8">
+												                    <img class="img-responsive wp-post-image" src="img/accilent_capital.jpg" style="width:100%">
+											                  </div>
+
+										                </div>
+									              </div>
+                            </div>
+								        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
                 </div>
             </div>
+        </div> <!-- modal 1 -->
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Prestige Hospitality Opportunity Fund I</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <img src="http://www.fesgroup.ca/wp-content/uploads/2016/08/PrestigeCapitallogo.jpg" alt="PrestigeCapitallogo" width="150" height="116" class="alignnone size-full wp-image-3251" />
 
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                            <div class="container">
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                <!--social-->
+                                <div class="col-md-12"></div>
+                                <!--social-->
+                                <h2 class="right-line">产品介绍</h2>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h4>简介</h4>
+                                        Prestige Hospitality Opportunity Fund I 是Prestige Capital旗下发行的基金，Prestige
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                        Capital Inc. 通过购买、管理北美的国际名牌酒店来增长营业收入和市值，这些知名酒店
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                        包括Holiday Inn，Ramada，Marriott，Hilton等。
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                        <h4 >投资亮点</h4>
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-            </div>
+                                        <ul style="padding-left:20px">
+                                            <li>国际品牌酒店</li>
+                                            <li>最低投资额$10,000</li>
+                                            <li>按季度分红</li>
+                                            <li>在卖出酒店时获得盈利</li>
+                                            <li>最低目标回报率8%</li>
+                                            <li>分享70-90% 的利润</li>
+                                            <li>RRSP, TFSA, LIRA, RESP账户投资</li>
+                                            <li>会员优惠</li>
+                                            <li>每季度可赎回$75,000</li>
+                                            <li>3-5年锁定</li>
+                                            <li>专业团队管理</li>
+                                        </ul>
 
-            <div class="row top-buffer">
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                        <h4 >投资过程</h4>
 
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                        <ul style="padding-left:20px">
+                                            <li>购买非品牌型酒店，并最终将其转化为国际品牌酒店</li>
+                                            <li>对所购买的酒店强化管理，并大幅改善品质</li>
+                                            <li>最终出售酒店并从中获利</li>
+                                        </ul>
+                                    </div>
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="panel panel-primary animated fadeInDown animation-delay-8">
+                                            <img class="img-responsive wp-post-image" src="http://www.fesgroup.ca/wp-content/uploads/2016/08/Unknown.png" >
+                                        </div>
 
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- container -->
+                    </div>
+                    <div class="modal-footer">
+                    </div>
                 </div>
             </div>
+        </div> <!-- modal 2 -->
 
-            <div class="row top-buffer">
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Triple Flip Inc.</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
 
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                        <div class="container">
+                            <img src="http://www.fesgroup.ca/wp-content/uploads/2016/08/header_logo_3.png" alt="header_logo_3" width="150" height="75" class="alignnone size-full wp-image-3242" />
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                            <div class="container">
 
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                <!--social-->
+                                <div class="col-md-12"></div>
+                                <!--social-->
+                                <h2 class="right-line">产品介绍</h2>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                        <ul class="list-unstyled">
+	                                          <li><strong>发行公司:</strong> Triple Flip Inc.</li>
+	                                          <li><strong>发行公司网站:</strong> <a href="https://tripleflip.ca"></a></li>
+                                            <li><strong>单价:</strong> $2.2 </li>
+                                            <li><strong>单位:</strong> A级优先股</li>
+                                            <li><strong>最低投资额:</strong> $22,000</li>
+                                        </ul>
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                        <h4>简介</h4>
+                                        Triple Flip 是一个全国性品牌，倡导先进生活方式，也为加拿大东西海岸6-13 岁的女孩提
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                        供独特的实体店购物经验。通过电商平台的推广，Triple Flip公司也为这一年龄层的女孩们
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
+                                        提供独家设计的产品，满足她们热爱运动的需求。<br><br>
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
 
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-            </div>
+                                        自2005年以来，Triple Flip 开始主打6－13岁女孩的运动服饰市场，填补了这一阶段的空白
 
-            <div class="row top-buffer">
+                                        。第一年便有着100万加元的收入。10年来，Triple Flip公司年平均复合增长率为32%。
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <figcaption> Blank </br> Blank </figcaption> 
-                        </figure>
-                    </button>
-                </div>
+                                        <div class="panel panel-primary animated fadeInDown animation-delay-8">
+                                            <img class="img-responsive wp-post-image" src="http://www.fesgroup.ca/wp-content/uploads/2016/08/IMG_9791.jpg" >
+                                        </div>
 
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </br> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
-                </div>
-
-                <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
-                        <figure>
-                            <img src="img/blank.png" alt="Nothing">
-
-                            <figcaption> Blank </figcaption>
-                        </figure>
-                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- container  -->
+                    </div>
+                    <div class="modal-footer">
+                    </div>
                 </div>
             </div>
-
-            <!-- Button trigger modal -->
-            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> -->
-            <!-- Launch demo modal -->
-            <!-- </button> -->
-
         </div>
+
+
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Mercury Mortgages</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <img class="alignnone size-full wp-image-3289" src="http://www.fesgroup.ca/wp-content/uploads/2016/09/division_logo_mercury.png" alt="Unknown" width="150" height="74" />
+                            <div class="container">
+
+                                <!--social-->
+                                <div class="col-md-12"></div>
+                                <!--social-->
+                                <h2 class="right-line">产品介绍</h2>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <ul>
+                                            <li><strong>基金经理8年平均回报率：</strong>8.3%</li>
+                                            <li><strong>最低投资额：</strong>$50,000</li>
+                                            <li><strong>按季度分红</strong></li>
+                                            <li><strong>发行公司：</strong>Kothari Group</li>
+                                            <li><strong>公司网站：</strong>http://kotharigroup.com/mercury_mortgages</li>
+                                        </ul>
+
+                                        <h4>投资亮点</h4>
+                                        <ul>
+                                            <li>以房产做担保，主要投资组合由第一抵押贷款组成</li>
+                                            <li>多样化的抵押贷款池 （地理分布：安省、曼省；房产类型：住宅、商用）</li>
+                                            <li>由有着丰富管理经验的管理团队经营和管理</li>
+                                            <li>相对稳定的高收益回报率，而且可以通过再投资计划提高复合回报率</li>
+                                            <li>可通过注册或非注册计划投资</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Modals -->
     </body>
 </html>
