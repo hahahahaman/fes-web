@@ -18,31 +18,63 @@
 
     <body>
         <nav class="navbar navbar-inverse fixed-bottom">
-            <div class="container-fluid btn-group btn-group-lg" role="group">
-                <button type="button" class="btn btn-secondary height-limit">
-                    <img src="img/home.png" class="height">
-                </button>
-                <button type="button" class="btn btn-secondary"> Section 1 </button>
-                <button type="button" class="btn btn-secondary"> Section 2 </button>
-                <button type="button" class="btn btn-secondary"> Section 3 </button>
-                <button type="button" class="btn btn-secondary"> Location </button>
+            <div class="container-fluid">
+                <div class="btn-group btn-group-lg mr-2" role="group">
+                    <button type="button" class="btn btn-secondary height-limit">
+                        <img src="img/home.png" class="height">
+                    </button>
+                </div>
+
+                <div class="btn-group btn-group-lg mr-2 height-limit" role="group">
+                    <button type="button" class="btn btn-secondary"> Section 1 </button>
+                    <button type="button" class="btn btn-secondary"> Section 2 </button>
+                    <button type="button" class="btn btn-secondary"> Section 3 </button>
+                </div>
+
+                <div class="btn-group btn-group-lg mr-2" role="group">
+                    <button type="button" class="btn btn-secondary height-limit">
+                        <img src="img/location.png" class="height">
+                    </button>
+                </div>
             </div>
         </nav>
 
-        <div class="container-fluid">
+        <div class="container-fluid width-limit">
             <div class="logo">
                 <img src="img/logo.png" alt="Logo" class="height">
             </div>
 
             <div class="row top-buffer">
                 <div class="col">
-                    <button type="button" class="btn btn-secondary grid_item">
+                    <button type="button" class="btn btn-secondary grid_item" data-toggle="modal" data-target="#exampleModal">
                         <figure>
                             <img src="img/accilent_capital.jpg" alt="Accilent Capital Inc.">
                             <figcaption> Accilent Captial Inc. </figcaption>
                         </figure>
                     </button>
                 </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Accilent Capital Inc.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
                 <div class="col">
                     <button type="button" class="btn btn-secondary grid_item">
@@ -243,6 +275,12 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> -->
+            <!-- Launch demo modal -->
+            <!-- </button> -->
+
         </div>
     </body>
 </html>

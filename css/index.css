@@ -6,7 +6,8 @@ html{
 
 body{
     background-color: #dddddd;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
+    /* width:90% */
 }
 
 .height{
@@ -14,21 +15,19 @@ body{
 }
 
 .height-limit{
-    height:5vh;
+    height:8vh;
 }
 
 .top-buffer{
-    height: 20vh;
+    width:100%;
+    max-height: 19vh;
     margin-top: 20px;
 }
 
+.width-limit{
+    width:97.5%
+}
 
-
-/* .col p{ */
-/*     display: block; */
-/*     margin: auto; */
-/*     text-align:center */
-/* } */
 
 .grid_item {
     background-color: #eeeeee;
@@ -38,11 +37,6 @@ body{
     /* padding: 10px; */
     height: 100%;
     width: 100%;
-}
-
-hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .logo {
@@ -62,9 +56,6 @@ figure {
     display: block;
     /* border: 1px dotted gray; */
     /* margin: 10px; /\* adjust as needed *\/ */
-}
-
-width-limit{
 }
 
 .col img{
@@ -90,4 +81,8 @@ figure figcaption {
 
 .btn-secondary{
     box-shadow: 2px 2px 2px grey;
+}
+
+.btn-secondary:hover{
+    background:#aaaabb;
 }
