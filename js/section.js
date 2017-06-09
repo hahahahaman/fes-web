@@ -5,6 +5,7 @@ var mic_items = [];
 
 function loadPage(){
     getItems();
+    fillGrid(grid_items);
     $("#home").click(function (){
         fillGrid(grid_items);
     });
@@ -18,6 +19,7 @@ function loadPage(){
     $("#section3").click(function (){
         fillGrid(mic_items);
     });
+
 }
 
 function getItems(){
