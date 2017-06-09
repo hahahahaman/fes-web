@@ -4,6 +4,7 @@ var limited_partner_items = [];
 var mic_items = [];
 
 function loadPage(){
+    document.addEventListener('contextmenu', event => event.preventDefault());
     getItems();
     fillGrid(grid_items);
     $("#home").click(function (){
