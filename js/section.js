@@ -24,12 +24,12 @@ function loadPage(){
 }
 
 function getItems(){
-    grid_items = $(".col");
-    private_equity_items = $(".private_equity");
-    limited_partner_items = $(".limited_partner");
-    mic_items = $(".mic");
+    grid_items = $("#grid .col");
+    private_equity_items = $("#grid .private_equity");
+    limited_partner_items = $("#grid .limited_partner");
+    mic_items = $("#grid .mic");
 
-    // console.log(grid_items);
+    console.log(grid_items);
     // console.log(mic_items);
     console.log($(grid_items[0])[0].outerHTML);
 }
@@ -57,4 +57,6 @@ function fillGrid(items){
     }
 }
 
-
+function openHomePage(){
+   var theWindow = window.open('http://www.fesgroup.ca/','_blank','width=1000px,height=800px,toolbar=yes,location=yes,scrollbars=yes,resizable=yes,top=100,left=100');
+}
